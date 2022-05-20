@@ -48,5 +48,17 @@ namespace DoDevLoja.Lib.Models
         {
             Data =  data;
         }
+        public void AdicionarProduto()
+        {
+
+        }
+        public void RemoverProdutu()
+        {
+
+        }
+        public void FinalizarPedido()
+        {
+            
+        }
     }
 }

@@ -68,5 +68,13 @@ namespace DoDevLoja.Lib.Models
         {
             Estoque = estoque;
         }
+        public void AdicionarProduto()
+        {
+
+        }
+        public void RemoverProdutu()
+        {
+            
+        }
     }
 }

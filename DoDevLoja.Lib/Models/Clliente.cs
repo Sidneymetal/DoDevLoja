@@ -1,9 +1,16 @@
 namespace DoDevLoja.Lib.Models
 {
-    public class Clliente : Usuario
+    public class Cliente : Usuario
     {
         public string CPF { get; set; }
         public string Endereco { get; set; }
+
+        public Cliente(string cpf, string endereco, string nome, string email, 
+        string senha) : base (nome, email, senha)
+        {
+            SetCPF(cpf);
+            SetEndereco(endereco);
+        }
 
         public string GetCPF()
         {

@@ -8,6 +8,15 @@ namespace DoDevLoja.Lib.Models
         public double Valor { get; set; }
         public int Estoque { get; set; }
 
+        public Produto(string nome, string marca, string descricao, double valor, int estoque)
+        {
+            SetNome(nome);
+            SetMarca(marca);
+            SetDescricao(descricao);
+            SetValor(valor);
+            SetEstoque(estoque);
+        }
+
         public string GetNome()
         {
             return Nome;

@@ -6,6 +6,13 @@ namespace DoDevLoja.Lib.Models
         public string Email { get; set; }
         public string Senha { get; set; }
 
+        public Usuario(string nome, string email, string senha)
+        {
+            SetNome(nome);
+            SetEmail(email);
+            SetSenha(senha);
+        }
+
         public string GetNome()
         {
             return Nome;

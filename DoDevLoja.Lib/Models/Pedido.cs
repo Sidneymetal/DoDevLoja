@@ -5,6 +5,7 @@ namespace DoDevLoja.Lib.Models
         public Usuario Usuario { get; set; }
         public Produto ListaProduto { get; set; }
         public double ValorTotal { get; set; }
+        public string Status { get; set; }
         public DateTime Data { get; set; }
 
         public Usuario GetUsuario()
@@ -30,6 +31,14 @@ namespace DoDevLoja.Lib.Models
         public void SetValorTotal(double valortotal)
         {
             ValorTotal = valortotal;
+        }
+        public string GetStatus()
+        {
+            return Status;
+        }
+        public void SetStatus(string status)
+        {
+            Status = status;
         }
         public DateTime GetData()
         {

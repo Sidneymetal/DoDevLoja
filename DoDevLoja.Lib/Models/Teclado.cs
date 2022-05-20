@@ -5,6 +5,14 @@ namespace DoDevLoja.Lib.Models
         public bool SemFio { get; set; }
         public bool Mecanico { get; set; }
 
+        public Teclado(bool semfio, bool mecanico, string nome, string marca,
+        string descricao, double valor, int estoque) :
+        base(nome, marca, descricao, valor, estoque)
+        {
+            SetSemFio(semfio);
+            SetMecanico(mecanico);
+        }
+
         public bool GetSemFio()
         {
             return SemFio;

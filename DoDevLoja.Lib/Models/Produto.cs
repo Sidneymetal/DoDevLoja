@@ -2,19 +2,30 @@ namespace DoDevLoja.Lib.Models
 {
     public class Produto
     {
+        public int ID { get; set; }
         public string Nome { get; set; }
         public string Marca { get; set; }
         public string Descricao { get; set; }
         public double Valor { get; set; }
         public int Estoque { get; set; }
 
-        public Produto(string nome, string marca, string descricao, double valor, int estoque)
+        public Produto(int id, string nome, string marca, string descricao, double valor, int estoque)
         {
+            SetID(id);
             SetNome(nome);
             SetMarca(marca);
             SetDescricao(descricao);
             SetValor(valor);
             SetEstoque(estoque);
+        }
+
+        public int GetID()
+        {
+            return ID;
+        }
+        public void SetID(int id)
+        {
+            ID = id;
         }
 
         public string GetNome()

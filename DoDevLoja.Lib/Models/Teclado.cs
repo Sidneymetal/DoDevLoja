@@ -29,5 +29,9 @@ namespace DoDevLoja.Lib.Models
         {
             Mecanico = mecanico;
         }
+        public double CalcularValor()
+        {
+
+        }
     }
 }

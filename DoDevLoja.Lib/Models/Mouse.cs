@@ -29,5 +29,9 @@ namespace DoDevLoja.Lib.Models
         {
             SemFio = semfio;
         }
+        public double CalcularValor()
+        {
+            
+        }
     }
 }

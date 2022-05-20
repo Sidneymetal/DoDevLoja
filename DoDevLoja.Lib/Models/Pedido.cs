@@ -56,7 +56,7 @@ namespace DoDevLoja.Lib.Models
         {
 
         }
-        public void FinalizarPedido()
+        public double FinalizarPedido()
         {
             
         }

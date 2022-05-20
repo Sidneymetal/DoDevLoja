@@ -29,5 +29,9 @@ namespace DoDevLoja.Lib.Models
         {
             Surround = surround;
         }
+        public double CalcularValor()
+        {
+
+        }
     }
 }

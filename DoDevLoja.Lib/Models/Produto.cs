@@ -8,8 +8,9 @@ namespace DoDevLoja.Lib.Models
         public string Descricao { get; set; }
         public double Valor { get; set; }
         public int Estoque { get; set; }
+        public bool SemFio { get; set; }
 
-        public Produto(int id, string nome, string marca, string descricao, double valor, int estoque)
+        public Produto(int id, string nome, string marca, string descricao, double valor, int estoque, bool semfio)
         {
             SetID(id);
             SetNome(nome);
@@ -17,6 +18,7 @@ namespace DoDevLoja.Lib.Models
             SetDescricao(descricao);
             SetValor(valor);
             SetEstoque(estoque);
+            SetSemFio(semfio);
         }
 
         public int GetID()
@@ -67,6 +69,14 @@ namespace DoDevLoja.Lib.Models
         public void SetEstoque(int estoque)
         {
             Estoque = estoque;
+        }
+        public bool GetSemFio()
+        {
+            return SemFio;
+        }
+        public void SetSemFio(bool semfio)
+        {
+            SemFio = semfio;
         }
         public void AdicionarProduto(int estoque)
         {

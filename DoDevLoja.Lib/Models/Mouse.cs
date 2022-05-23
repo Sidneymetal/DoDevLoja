@@ -3,16 +3,12 @@ namespace DoDevLoja.Lib.Models
     public class Mouse : Produto
     {
         public int DPI { get; set; }
-        public bool SemFio { get; set; }
-
         public Mouse(int dpi, bool semfio, int id, string nome, string marca,
-        string descricao, double valor, int estoque) :
-        base(id, nome, marca, descricao, valor, estoque)
+        string descricao, double valor, int estoque, bool semfio) :
+        base(id, nome, marca, descricao, valor, estoque, semfio)
         {
-            SetDPI(dpi);
-            SetSemFio(semfio);
+            SetDPI(dpi);            
         }
-
         public int GetDPI()
         {
             return DPI;
@@ -20,15 +16,7 @@ namespace DoDevLoja.Lib.Models
         public void SetDPI(int dpi)
         {
             DPI = dpi;
-        }
-        public bool GetSemFio()
-        {
-            return SemFio;
-        }
-        public void SetSemFio(bool semfio)
-        {
-            SemFio = semfio;
-        }
+        }        
         public double CalcularValor()
         {
             

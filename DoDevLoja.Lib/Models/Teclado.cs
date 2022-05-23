@@ -1,26 +1,15 @@
 namespace DoDevLoja.Lib.Models
 {
     public class Teclado : Produto
-    {
-        public bool SemFio { get; set; }
+    {        
         public bool Mecanico { get; set; }
 
         public Teclado(bool semfio, bool mecanico, int id, string nome, string marca,
-        string descricao, double valor, int estoque) :
-        base(id, nome, marca, descricao, valor, estoque)
-        {
-            SetSemFio(semfio);
+        string descricao, double valor, int estoque, bool semfio) :
+        base(id, nome, marca, descricao, valor, estoque, semfio)
+        {            
             SetMecanico(mecanico);
-        }
-
-        public bool GetSemFio()
-        {
-            return SemFio;
-        }
-        public void SetSemFio(bool semfio)
-        {
-            SemFio = semfio;
-        }
+        }        
         public bool GetMecanico()
         {
             return Mecanico;
@@ -31,7 +20,7 @@ namespace DoDevLoja.Lib.Models
         }
         public double CalcularValor()
         {
-
+            
         }
     }
 }

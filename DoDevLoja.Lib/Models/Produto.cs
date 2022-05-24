@@ -16,7 +16,7 @@ namespace DoDevLoja.Lib.Models
             SetNome(nome);
             SetMarca(marca);
             SetDescricao(descricao);
-            SetValor(valor);
+            SetValor(CalcularValor(valor));
             SetEstoque(estoque);
             SetSemFio(semfio);
         }
@@ -85,6 +85,10 @@ namespace DoDevLoja.Lib.Models
         public void RemoverProduto(int estoque)
         {
             Estoque = Estoque - estoque;
+        }
+        public virtual double CalcularValor(double valor)
+        {
+            return Valor;
         }
     }
 }

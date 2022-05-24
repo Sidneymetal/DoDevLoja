@@ -8,10 +8,10 @@ namespace DoDevLoja.Lib.Models
         public string Status { get; set; }
         public DateTime Data { get; set; }
 
-        public Pedido(Usuario usuario, double valortotal, string status, DateTime data)
+        public Pedido(Usuario usuario, string status, DateTime data)
         {
             SetUsuario = (usuario);
-            SetValorTotal = (valortotal);
+            SetValorTotal = 0;
             SetStatus = (status);
             SetData = (data);
             ListaProduto = new List<Produto>();

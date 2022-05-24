@@ -18,9 +18,12 @@ namespace DoDevLoja.Lib.Models
         {
             Mecanico = mecanico;
         }
-        public double CalcularValor()
+        public override double CalcularValor(double valor)
         {
-            
+            if (Mecanico)
+                valor = valor + 200;
+            if (SemFio) 
+                valor = valor * 1.15;
         }
     }
 }

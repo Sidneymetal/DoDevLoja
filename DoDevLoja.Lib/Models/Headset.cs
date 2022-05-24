@@ -1,14 +1,13 @@
 namespace DoDevLoja.Lib.Models
 {
     public class Headset : Produto
-    {     
+    {
         public bool Surround { get; set; }
 
         public Headset(bool semfio, bool surround, int id, string nome, string marca,
         string descricao, double valor, int estoque, bool semfio) :
         base(id, nome, marca, descricao, valor, estoque, semfio)
         {
-            SetSemFio(semfio);
             SetSurround(surround);
         }
         public bool GetSurround()
@@ -19,9 +18,15 @@ namespace DoDevLoja.Lib.Models
         {
             Surround = surround;
         }
-        public double CalcularValor()
+        public override double CalcularValor(double valor)
         {
-
+            if (Surround && SemFio)
+            {
+                valor = valor + 500;
+            }
+            else if (Surround || SemFio)
+                valor = valor + 150;
+            return valor;
         }
     }
 }

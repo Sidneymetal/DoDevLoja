@@ -5,8 +5,8 @@ namespace DoDevLoja.Lib.Models
         public bool Mecanico { get; set; }
 
         public Teclado(bool semfio, bool mecanico, int id, string nome, string marca,
-        string descricao, double valor, int estoque, bool semfio) :
-        base(id, nome, marca, descricao, valor, estoque, semfio)
+        string descricao, double valor, int estoque) :
+        base(id, nome, marca, descricao, valor, estoque)
         {            
             SetMecanico(mecanico);
         }        

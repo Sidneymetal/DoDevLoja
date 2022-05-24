@@ -10,9 +10,9 @@ public class PedidoController : ControllerBase
     public static Pedido Pedido { get; set; } = new Pedido("NickName", "Confirmado", DateTime.Now);
     public static List<Produto> ProdutoVenda { get; set; } = new List<Produto>()
     {
-      new Mouse(1, "MouseRuim", "MarcaUm", "Mouse abaixo da média", 30, 5, false, 800),
+      /*new Mouse(1, "MouseRuim", "MarcaUm", "Mouse abaixo da média", 30, 5, false, 800),
       new Mouse(2, "MouseMedio", "MarcaDois", "Mouse na média", 100, 7, false, 2400),
-      new Mouse(3, "MouseBom", "MarcaDois", "Mouse acima da média", 200, 2, true, 12000),
+      new Mouse(3, "MouseBom", "MarcaDois", "Mouse acima da média", 200, 2, true, 12000),*/
       new Keyboard(4, "TecladoRuim", "MarcaUm", "Teclado abaixo da média", 100, 3, false, false),
       new Keyboard(5, "TecladoBom", "MarcaTres", "Teclado acima da média", 500, 1, true, true),
       new Headset(6, "HeadsetMedio", "MarcaDois", "Headset na média", 250, 2, false, true),

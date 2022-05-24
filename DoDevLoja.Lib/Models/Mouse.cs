@@ -4,8 +4,8 @@ namespace DoDevLoja.Lib.Models
     {
         public int DPI { get; set; }
         public Mouse(int dpi, bool semfio, int id, string nome, string marca,
-        string descricao, double valor, int estoque, bool semfio) :
-        base(id, nome, marca, descricao, valor, estoque, semfio)
+        string descricao, double valor, int estoque) :
+        base(id, nome, marca, descricao, valor, estoque)
         {
             SetDPI(dpi);
         }
